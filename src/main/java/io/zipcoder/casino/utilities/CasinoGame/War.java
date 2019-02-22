@@ -1,6 +1,7 @@
 package io.zipcoder.casino.utilities.CasinoGame;
 
 public class War extends CardGame implements Game {
+    public java.util.ArrayList<WarPlayer> warPlayerList;
 
     public War(PlayerList playerList) {
     }
