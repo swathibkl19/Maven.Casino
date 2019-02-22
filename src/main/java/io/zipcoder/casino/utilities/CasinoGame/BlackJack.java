@@ -2,6 +2,7 @@ package io.zipcoder.casino.utilities.CasinoGame;
 
 public class BlackJack extends CardGame implements GamblingGame {
     public java.util.ArrayList<Integer> betList;
+    public java.util.ArrayList<BlackJackPlayer> blackJackPlayerList;
 
     public BlackJack(PlayerList playerList) {
     }

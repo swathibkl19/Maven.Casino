@@ -1,6 +1,7 @@
 package io.zipcoder.casino.utilities.CasinoGame;
 
 public class GoFish extends CardGame implements Game {
+    public java.util.ArrayList<GoFishPlayer> goFishPlayerList;
 
     public GoFish(PlayerList playerList) {
     }
