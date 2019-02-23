@@ -1,7 +1,7 @@
 package io.zipcoder.casino.utilities.CasinoGame;
 
 public class Card {
-    
+
     private Suit suit;
     private BlackJackEnum blackJackEnum;
     private CardDefultEnum cardDefultEnum;
