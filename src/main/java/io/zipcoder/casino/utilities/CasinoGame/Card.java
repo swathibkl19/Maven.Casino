@@ -1,45 +1,41 @@
 package io.zipcoder.casino.utilities.CasinoGame;
 
 public class Card {
-    private String cardName;
-    private String suit;
-    private int blackJackValue;
-    private int generalValue;
 
-    public Card(){}
+    private Suit suit;
+    private BlackJackEnum blackJackEnum;
+    private CardDefultEnum cardDefultEnum;
 
-    public Card(String cardName, String suit, int blackJackValue, int generalValue) {
-         this.cardName=cardName;
-         this.suit = suit;
-         this.blackJackValue = blackJackValue;
-         this.generalValue= generalValue;
+    public Card (BlackJackEnum blackJackEnum, Suit suit)
+    {
+        this.blackJackEnum = blackJackEnum;
+        this.suit = suit;
+    }
+    public Card (CardDefultEnum cardDefultEnum, Suit suit)
+    {
+        this.cardDefultEnum = cardDefultEnum;
+        this.suit = suit;
     }
 
-    public String getCardName() {
-
-        return cardName;
-    }
-
-    public String getCardSuit() {
-
+    public Suit getSuit()
+    {
         return suit;
     }
 
-
-    public void setBlackJackValue(int blackJackValue) {
-        this.blackJackValue = blackJackValue;
+    public void setSuit(Suit suit)
+    {
+        this.suit = suit;
     }
 
-    public int getCardBlackJackValue() {
-        return blackJackValue;
+    public BlackJackEnum getBlackJackEnum()
+    {
+        return blackJackEnum;
     }
 
-    public int getCardGeneralValue() {
-        return generalValue;
+    public void setBlackJackEnum(BlackJackEnum blackJackEnum)
+    {
+        this.blackJackEnum = blackJackEnum;
     }
 
-    public String toString() {
-        return "CardName:"+cardName+ " Suit:"+suit+" BlackJackValue:"+blackJackValue+" GeneralValue:"+generalValue;
-    }
 
 }
