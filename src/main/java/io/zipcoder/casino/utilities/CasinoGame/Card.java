@@ -6,6 +6,8 @@ public class Card {
     private int blackJackValue;
     private int generalValue;
 
+    public Card(){}
+
     public Card(String cardName, String suit, int blackJackValue, int generalValue) {
          this.cardName=cardName;
          this.suit = suit;
@@ -21,6 +23,11 @@ public class Card {
     public String getCardSuit() {
 
         return suit;
+    }
+
+
+    public void setBlackJackValue(int blackJackValue) {
+        this.blackJackValue = blackJackValue;
     }
 
     public int getCardBlackJackValue() {
