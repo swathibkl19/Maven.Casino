@@ -6,27 +6,33 @@ public class Card {
     private int blackJackValue;
     private int generalValue;
 
-    public Card(String cardName, String suit) {
+    public Card(String cardName, String suit, int blackJackValue, int generalValue) {
+         this.cardName=cardName;
+         this.suit = suit;
+         this.blackJackValue = blackJackValue;
+         this.generalValue= generalValue;
     }
 
     public String getCardName() {
-        return null;
+
+        return cardName;
     }
 
     public String getCardSuit() {
-        return null;
+
+        return suit;
     }
 
     public int getCardBlackJackValue() {
-        return 0;
+        return blackJackValue;
     }
 
     public int getCardGeneralValue() {
-        return 0;
+        return generalValue;
     }
 
     public String toString() {
-        return null;
+        return "CardName:"+cardName+ " Suit:"+suit+" BlackJackValue:"+blackJackValue+" GeneralValue:"+generalValue;
     }
 
 }
