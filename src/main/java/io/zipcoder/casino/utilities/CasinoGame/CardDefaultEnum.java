@@ -1,6 +1,6 @@
 package io.zipcoder.casino.utilities.CasinoGame;
 
-public enum CardDefultEnum {
+public enum CardDefaultEnum {
     TWO(2),
     THREE(3),
     FOUR(4),
@@ -16,7 +16,7 @@ public enum CardDefultEnum {
     ACE(14);
 
     private int cardDefaultEnum;
-    CardDefultEnum(int cardDefaultEnum){
+    CardDefaultEnum(int cardDefaultEnum){
         this.cardDefaultEnum=cardDefaultEnum;
 
     }

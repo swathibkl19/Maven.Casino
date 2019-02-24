@@ -5,5 +5,5 @@ public interface GamblingPlayer {
 
     Integer placeBet();
 
-    void recieveWinnings();
+    void receiveWinnings(Integer winnings);
 }
