@@ -14,49 +14,49 @@ public class Hand {
         this.hand = hand;
     }
 
-    public int getBlackJackValue(ArrayList<Card> hand) {
+//    public int getBlackJackValue(ArrayList<Card> hand) {
+//
+//
+//
+//        int i = 0;
+//
+//
+//        for (i = 0; i < hand.size(); i++) {
+//            if (value < 21) {
+//
+//
+//                value = value + hand.get(i).getCardBlackJackValue();
+//
+//            } else if ((value > 21)) {
+//
+//                if (hand.get(i).getCardName().equalsIgnoreCase("Ace"))
+//
+//
+//                   hand.get(i).setBlackJackValue(1);
+//
+//                value = value + hand.get(i).getCardBlackJackValue();
+//            }
+//
+//
+//
+//
+//        }
+//        return null;
+//    }
 
 
 
-        int i = 0;
-
-
-        for (i = 0; i < hand.size(); i++) {
-            if (value < 21) {
-
-
-                value = value + hand.get(i).getCardBlackJackValue();
-
-            } else if ((value > 21)) {
-
-                if (hand.get(i).getCardName().equalsIgnoreCase("Ace"))
-
-
-                   hand.get(i).setBlackJackValue(1);
-
-                value = value + hand.get(i).getCardBlackJackValue();
-            }
-
-
-
-
-        }
-        return value;
-    }
-
-
-
-    public int getGeneralValue(ArrayList<Card> hand) {
-        int value = 0;
-
-        for (int i = 0; i < hand.size(); i++) {
-
-
-            value = value + hand.get(i).getCardGeneralValue();
-
-        }
-        return value;
-    }
+//    public int getGeneralValue(ArrayList<Card> hand) {
+//        int value = 0;
+//
+//        for (int i = 0; i < hand.size(); i++) {
+//
+//
+//            value = value + hand.get(i).getCardGeneralValue();
+//
+//        }
+//        return value;
+//    }
 
 
         public int getSize(ArrayList<Card> hand)

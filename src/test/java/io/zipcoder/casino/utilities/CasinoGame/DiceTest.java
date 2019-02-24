@@ -23,7 +23,9 @@ public class DiceTest {
         Integer actualDice1 = testDice.getValue(0);
         Integer actualDice2 = testDice.getValue(1);
         //Then
-        Assert.assertEquals(expectedNumberOfDice,testDice);
+        Assert.assertEquals(expectedSize,testDice.getValue(0));
+        Assert.assertEquals(expectedSize,testDice.getValue(1));
+
 
     }
 }

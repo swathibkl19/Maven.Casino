@@ -14,7 +14,7 @@ public class HandTest {
     @Test
     public void getBlackJackValueTest() {
 
-        Card cd1 = new Card("King","Spades",10,13);
+        Card cd1 = new Card();
 
         Card cd2 = new Card("Jack","Spades",10,13);
         Card cd3 = new Card("Queen","Spades",10,13);

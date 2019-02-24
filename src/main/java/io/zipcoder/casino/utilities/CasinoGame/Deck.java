@@ -27,7 +27,7 @@ public class Deck {
     public void buildRegularDeck() {
 
         for (int i = 0; i < 13; i++) {
-            CardDefultEnum value = CardDefultEnum.values()[i];
+            CardDefaultEnum value = CardDefaultEnum.values()[i];
 
             for (int j = 0; j < 4; j++) {
                 Card card = new Card(value, Suit.values()[j]);
