@@ -15,8 +15,20 @@ public class Dice {
         }
     }
 
+    public Dice() {
+        this(2,6);
+    }
+
     public Integer getValue(Integer diceNumber) {
 
         return diceValueList.get(diceNumber);
     }
+
+    public void rollDice() {
+        for (int i = 0; i < diceValueList.size(); i++){
+            diceValueList.set(i,diceVal.nextInt(5)+1);
+        }
+    }
 }
+
+

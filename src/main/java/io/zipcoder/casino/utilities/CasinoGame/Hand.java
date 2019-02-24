@@ -7,73 +7,69 @@ public class Hand {
     int value = 0;
 
 
-   ArrayList<Card> hand = new ArrayList<Card>();
+   ArrayList<Card> hand;
 
     public Hand(ArrayList<Card> hand) {
 
         this.hand = hand;
     }
 
-    public int getBlackJackValue(ArrayList<Card> hand) {
+//    public int getBlackJackValue(ArrayList<Card> hand) {
+//
+//
+//
+//        int i = 0;
+//
+//
+//        for (i = 0; i < hand.size(); i++) {
+//            if (value < 21) {
+//
+//
+//                value = value + hand.get(i).getCardBlackJackValue();
+//
+//            } else if ((value > 21)) {
+//
+//                if (hand.get(i).getCardName().equalsIgnoreCase("Ace"))
+//
+//
+//                   hand.get(i).setBlackJackValue(1);
+//
+//                value = value + hand.get(i).getCardBlackJackValue();
+//            }
+//
+//
+//
+//
+//        }
+//        return null;
+//    }
 
 
 
-        int i = 0;
-
-
-        for (i = 0; i < hand.size(); i++) {
-            if (value < 21) {
-
-
-                value = value + hand.get(i).getCardBlackJackValue();
-
-            } else if ((value > 21)) {
-
-                if (hand.get(i).getCardName().equalsIgnoreCase("Ace"))
-
-
-                   hand.get(i).setBlackJackValue(1);
-
-                value = value + hand.get(i).getCardBlackJackValue();
-            }
-
-
-
-
-        }
-        return value;
-    }
-
-
-
-    public int getGeneralValue(ArrayList<Card> hand) {
-        int value = 0;
-
-        for (int i = 0; i < hand.size(); i++) {
-
-
-            value = value + hand.get(i).getCardGeneralValue();
-
-        }
-        return value;
-    }
+//    public int getGeneralValue(ArrayList<Card> hand) {
+//        int value = 0;
+//
+//        for (int i = 0; i < hand.size(); i++) {
+//
+//
+//            value = value + hand.get(i).getCardGeneralValue();
+//
+//        }
+//        return value;
+//    }
 
 
         public int getSize(ArrayList<Card> hand)
-
-
     {
 
         return hand.size();
 
 
-
-
         }
 
 
 
-    public void clear() {
+    public void clearHand() {
 
         {
             hand.clear();

@@ -4,16 +4,16 @@ public class Card {
 
     private Suit suit;
     private BlackJackEnum blackJackEnum;
-    private CardDefultEnum cardDefultEnum;
+    private CardDefaultEnum cardDefaultEnum;
 
     public Card (BlackJackEnum blackJackEnum, Suit suit)
     {
         this.blackJackEnum = blackJackEnum;
         this.suit = suit;
     }
-    public Card (CardDefultEnum cardDefultEnum, Suit suit)
+    public Card (CardDefaultEnum cardDefultEnum, Suit suit)
     {
-        this.cardDefultEnum = cardDefultEnum;
+        this.cardDefaultEnum = cardDefultEnum;
         this.suit = suit;
     }
 
@@ -35,6 +35,13 @@ public class Card {
     public void setBlackJackEnum(BlackJackEnum blackJackEnum)
     {
         this.blackJackEnum = blackJackEnum;
+    }
+
+    public CardDefaultEnum getDefaultEnum(){
+        return cardDefaultEnum;
+    }
+    public void setCardDefaultEnum(CardDefaultEnum cardDefaultEnum){
+        this.cardDefaultEnum = cardDefaultEnum;
     }
 
 

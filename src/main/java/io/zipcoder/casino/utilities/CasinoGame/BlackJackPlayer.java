@@ -19,6 +19,7 @@ public class BlackJackPlayer implements GamblingPlayer {
    //balance = player.balance - betValue;
 
     //return  balance;
+        return 0;
     }
 
     public void recieveWinnings() {
