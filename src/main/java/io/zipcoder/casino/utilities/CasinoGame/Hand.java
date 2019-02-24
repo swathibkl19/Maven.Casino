@@ -7,7 +7,7 @@ public class Hand {
     int value = 0;
 
 
-   ArrayList<Card> hand = new ArrayList<Card>();
+   ArrayList<Card> hand;
 
     public Hand(ArrayList<Card> hand) {
 
@@ -60,20 +60,16 @@ public class Hand {
 
 
         public int getSize(ArrayList<Card> hand)
-
-
     {
 
         return hand.size();
-
-
 
 
         }
 
 
 
-    public void clear() {
+    public void clearHand() {
 
         {
             hand.clear();

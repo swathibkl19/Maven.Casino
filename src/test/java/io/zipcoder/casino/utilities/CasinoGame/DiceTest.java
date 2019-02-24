@@ -28,4 +28,28 @@ public class DiceTest {
 
 
     }
+
+    @Test
+    public void nullaryDiceConstructorTest() {
+        //Given
+        Integer expectedSize = 6;
+
+
+        //When
+        Dice testDice = new Dice();
+        //Then
+        Assert.assertEquals(expectedSize, testDice.getValue(0));
+        Assert.assertEquals(expectedSize, testDice.getValue(1));
+    }
+
+    @Test
+    public void rollTest(){
+        //Given
+        Dice testDice = new Dice();
+        //When
+        testDice.rollDice();
+        //Then
+        System.out.println(testDice.getValue(0));
+        System.out.println(testDice.getValue(1));
+    }
 }
