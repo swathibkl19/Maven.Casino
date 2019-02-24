@@ -1,11 +1,24 @@
 package io.zipcoder.casino.utilities.CasinoGame;
 
+import java.io.InputStream;
+
 public class CrapsPlayer implements GamblingPlayer {
-    public Integer placeBet() {
-        return null;
+
+    String name;
+    Integer balance;
+    Console console = new Console(System.in,System.out);
+    public CrapsPlayer(Player player) {
+        this.name = player.getName();
+        this.balance = player.getBalance();
     }
 
-    public void recieveWinnings() {
+    public Integer placeBet() {
+        Integer bet = console.getIntegerInput("What would you like to bet?");
+        balance -= bet;
+        return bet;
+    }
 
+    public void receiveWinnings(Integer winnings) {
+        balance += winnings;
     }
 }

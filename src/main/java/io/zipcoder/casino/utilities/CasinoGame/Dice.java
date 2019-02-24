@@ -6,14 +6,23 @@ import java.util.Random;
 
 public class Dice {
     public java.util.Random random;
-    private Random diceVal = new Random();
+    private Random diceVal;
     private List<Integer> diceValueList = new ArrayList<>();
 
     public Dice(Integer numberOfDice, Integer diceSize) {
+        this.diceVal = new Random();
         for(int i = 0; i < numberOfDice; i++){
             diceValueList.add(diceSize);
         }
     }
+
+    public Dice(Integer numberOfDice, Integer diceSize, Long seed) {
+        this(numberOfDice,diceSize);
+        this.diceVal = new Random(seed);
+
+    }
+
+
 
     public Dice() {
         this(2,6);
@@ -28,6 +37,14 @@ public class Dice {
         for (int i = 0; i < diceValueList.size(); i++){
             diceValueList.set(i,diceVal.nextInt(5)+1);
         }
+    }
+
+    public Integer getSum() {
+        Integer diceSum = 0;
+        for(Integer thisValue : diceValueList){
+            diceSum += thisValue;
+        }
+        return diceSum;
     }
 }
 

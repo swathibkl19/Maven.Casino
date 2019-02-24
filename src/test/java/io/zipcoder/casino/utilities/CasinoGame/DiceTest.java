@@ -5,6 +5,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.zip.InflaterInputStream;
+
 public class DiceTest {
 
 //    @Before
@@ -45,11 +47,26 @@ public class DiceTest {
     @Test
     public void rollTest(){
         //Given
-        Dice testDice = new Dice();
+        Dice testDice = new Dice(2,6,2L);
+        Integer expectedFirstSeed = 4;
+        Integer expectedSecondSeed = 3;
         //When
         testDice.rollDice();
         //Then
-        System.out.println(testDice.getValue(0));
-        System.out.println(testDice.getValue(1));
+        Assert.assertEquals(expectedFirstSeed,testDice.getValue(0));
+        Assert.assertEquals(expectedSecondSeed,testDice.getValue(1));
+    }
+
+    @Test
+    public void getSumTest(){
+        //Given
+        Dice testDice = new Dice(2,6,  2L);
+        Integer expectedSum = 7;
+        //When
+        testDice.rollDice();
+        Integer testSum = testDice.getSum();
+        //Then
+        Assert.assertEquals(expectedSum,testSum);
+
     }
 }
