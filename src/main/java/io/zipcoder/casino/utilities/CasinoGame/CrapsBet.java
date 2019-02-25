@@ -1,6 +1,6 @@
 package io.zipcoder.casino.utilities.CasinoGame;
 
-public enum CrapsBets {
+public enum CrapsBet {
     PASSLINE(1,1),
     DONTPASS(1,1),
     COME(1,1),
@@ -29,14 +29,32 @@ public enum CrapsBets {
     BOXCAR(30,1);
 
 public Integer[] betOdds = new Integer[2];
-
-    CrapsBets(int multiplier,int divisor) {
+public Integer currentBet;
+Console console = new Console(System.in,System.out);
+    CrapsBet(int multiplier,int divisor) {
         this.betOdds[0] = multiplier;
         this.betOdds[1] = divisor;
+        this.currentBet = 0;
 
     }
 
-    public Integer getPayout(Integer bet){
-    return ((betOdds[0]*bet)/ betOdds[1])+bet;
+    public Integer getPayout() {
+        Integer payout = ((betOdds[0] * currentBet) / betOdds[1]) + currentBet;
+        console.println("You've won: " + payout + "!");
+        this.currentBet = 0;
+        return payout;
+    }
+
+    public void betOn(Integer bet){
+         this.currentBet = bet;
+        }
+    public Integer getBet(){
+        return currentBet;
+    }
+
+    public void clearBet(){
+        this.currentBet = 0;
+    }
+
 }
-}
+
