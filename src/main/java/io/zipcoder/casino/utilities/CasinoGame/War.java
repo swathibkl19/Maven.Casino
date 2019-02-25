@@ -11,15 +11,32 @@ public class War extends CardGame implements Game {
     public void play() {
     }
 
-    public Deck getPlayerDeck(){
+    public Hand getPlayer1Hand() {
         Deck warPlayerDeck = new Deck();
-        warPlayerDeck.buildRegularDeck();
-        for (int i = 0; i < 26; i++){
-//            warPlayerDeck.pop();
-        }
+        Hand player1Hand = new Hand();
 
-        return null;
+        warPlayerDeck.buildRegularDeck();
+        for (int i = 0; i < 26; i++) {
+            Card card = warPlayerDeck.regularDeck.pop();
+            player1Hand.addCard(card);
+        }
+        return player1Hand;
     }
+
+    public Hand getPlayer2Hand() {
+        Deck warPlayerDeck = new Deck();
+        Hand player2Hand = new Hand();
+
+        warPlayerDeck.buildRegularDeck();
+        for (int i = 26; i <= 52; i++) {
+                Card card = warPlayerDeck.regularDeck.pop();
+                player2Hand.addCard(card);
+            }
+        return player2Hand;
+    }
+
+
+
 
     public Integer getScore() {
         return null;
