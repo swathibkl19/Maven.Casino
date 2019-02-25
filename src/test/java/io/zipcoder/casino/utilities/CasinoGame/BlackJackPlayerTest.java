@@ -37,7 +37,7 @@ public class BlackJackPlayerTest {
 
        //When
       blackJackPlayer.placeBet(betValue);
-      Integer remainingBalance = myplayer.getBalance()
+      Integer remainingBalance = myplayer.getBalance();
 
         Integer actualBalance = (blackJackPlayer.balance - betValue);
 

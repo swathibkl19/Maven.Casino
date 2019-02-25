@@ -22,11 +22,6 @@ public class BlackJackTest {
         Integer actualWinnings = bj.giveWinnings();
         Assert.assertEquals(expectedWinning, actualWinnings);
 
-
-
-
-
-
     }
 
     @Test
@@ -38,8 +33,7 @@ public class BlackJackTest {
 
        // BlackJack bj = new BlackJack(p1);
 
-
-       Integer expectedbet= 50;
+      Integer expectedbet= 50;
         Assert.assertFalse(betListt.isEmpty());
 
 

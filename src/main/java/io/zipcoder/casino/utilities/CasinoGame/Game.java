@@ -1,7 +1,7 @@
 package io.zipcoder.casino.utilities.CasinoGame;
 
 public interface Game {
-    void play();
+    Game play();
 
     Integer getScore();
 }
