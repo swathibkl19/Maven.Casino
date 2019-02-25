@@ -11,6 +11,9 @@ public class BlackJackPlayer extends Player implements GamblingPlayer {
     public  BlackJackPlayer(){
 
     }
+    public  BlackJackPlayer( Player player){
+
+    }
 
   public BlackJackPlayer(String name ,Integer balance){
 
