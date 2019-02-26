@@ -10,13 +10,10 @@ public class Casino {
     public Console display;
 
 
+
     public static void main(String[] args) {
 
         Console console = new Console(System.in, System.out);
-
-
-        // public void selectGame (Game gameToPlay){
-
 
         String continueString="";
 

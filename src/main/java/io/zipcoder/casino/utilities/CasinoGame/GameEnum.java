@@ -3,11 +3,11 @@ import java.util.function.Supplier;
 
 public enum GameEnum {
 
-    BlackJack(BlackJack::new),
-    Craps(Craps::new),
+   // BlackJack(BlackJack::new),
+    //Craps(Craps::new),
     GoFish(GoFish::new);
-    Quit(System.exit(0),
-    War(War::new);
+    //Quit(System.exit(0),
+    //War(War::new);
 
 private  final Supplier<Game>supplier;
 
